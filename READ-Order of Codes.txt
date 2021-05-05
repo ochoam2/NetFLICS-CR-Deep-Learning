@@ -1,0 +1,22 @@
+
+To run NetFLICS-CR architecture:
+* originally created with Spyder in Anaconda Navigator suite. Keras and Tensorflow based.
+
+1) First in code 'class_generator' set directory to 'example_train_data';
+2) Run 'class_generator';
+3) Open 'netflicscr_train_128_4_github' which is the main architecture code and set directory to save trained network. (h5py.File)
+	- For network training 5100 samples are provided as example. Please note the NetFLICS-CR paper used 32000 samples for training
+	and 8000 samples for validation.	
+	- Define number of CR measurements to use (200 used as example, so 98.8% CR)
+	- Define where to save trained network in log_dir variable.
+4) Once network is trained try to reconstruct example data provided in "ExRPI128".
+	- Run "netflicscr_recon_exp_128" code to obtain reconstructions.
+	- Reconstructions saved in trained network folder created after 3) "trained_netflicscr_pat200"
+
+Please if you use parts of the NetFLICS-CR architecture code, do not forget to cite:
+-----------------------------------------------------------------------------
+Ochoa, M., et al. "High compression deep learning based single-pixel hyperspectral 
+macroscopic fluorescence lifetime imaging in vivo." Biomedical Optics Express 11.10 (2020): 5401-5424.
+
+
+
