@@ -3,7 +3,7 @@ To run NetFLICS-CR architecture:
 * originally created with Spyder in Anaconda Navigator suite. Keras and Tensorflow based.
 
 1) First in code 'class_generator' set directory to 'example_train_data';
-	- Due to size limitations the data can be downloaded from:
+	- Due to size limitations the example train data can be downloaded from:
 	https://drive.google.com/drive/folders/1mZjGOI68s2q3WttQ6LoI47ICOEHDHf7M?usp=sharing
 2) Run 'class_generator';
 3) Open 'netflicscr_train_128_4_github' which is the main architecture code and set directory to save trained network. (h5py.File)
@@ -11,7 +11,7 @@ To run NetFLICS-CR architecture:
 	and 8000 samples for validation.	
 	- Define number of CR measurements to use (200 used as example, so 98.8% CR)
 	- Define where to save trained network in log_dir variable.
-4) Once network is trained try to reconstruct example data provided in "ExRPI128".
+4) Once network is trained try to reconstruct example experimental data provided in "ExRPI128".
 	- Due to size limitations ExRPI128 example data can be downloaded from:
 	https://drive.google.com/drive/folders/1bUny4vx1TeLR4927d1GhUqO8Dhewm3X9?usp=sharing
 	- Run "netflicscr_recon_exp_128" code to obtain reconstructions.
